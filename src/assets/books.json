@@ -1,0 +1,34 @@
+[
+{
+        "id": 1,
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51XY8E8S7SL._SX322_BO1,204,203,200_.jpg",
+        "title": "Rubicon: The Last Years of the Roman Republic",
+        "author": "Tom Holland",
+        "isbn": "9781400078974",
+        "yearpublished": 2005,
+        "rating": 3 ,
+        "status": "Read"
+      },
+      {
+        "id": 2 ,
+        "imageUrl": "https://prodimage.images-bn.com/pimages/9780451205360_p0_v1_s550x406.jpg",
+        "title": "The Richest Man in Babylon",
+        "author": "George S. Clayson",
+        "isbn": "9780451205360",
+        "yearpublished": 2010,
+        "rating": 3 ,
+        "status": "Read"
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51X7dEUFgoL._SX320_BO1,204,203,200_.jpg",
+        "title": "How to Win Friends and Influence People",
+        "author": "Dale Carnegie",
+        "isbn": "9780671027032",
+        "yearpublished": 1998,
+        "rating": 3 ,
+        "status": "Read"
+      }
+    ]
+    
+    

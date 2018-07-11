@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+<div class='panel panel-primary' *ngIf='book'>
+    <div class='panel-heading'>
+        {{pageTitle + ': ' + book.title}}
+    </div>
+
+    <div class='panel-body'>
+                <div class='row'>
+                    <div class='col-md-3'>Title:</div>
+                    <div class='col-md-6'>{{ book.title }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Author:</div>
+                    <div class='col-md-6'>{{ book.author }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>ISBN:</div>
+                    <div class='col-md-6'>{{ book.isbn }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Year Published:</div>
+                    <div class='col-md-6'>{{ book.yearpublished }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Rating:</div>
+                    <div class='col-md-6'>{{ book.rating }}
+                    </div>
+                <div class='row'>
+                    <div class='col-md-3'>Status:</div>
+                     <div class='col-md-6'>{{ book.status }}</div>
+                     </div>
+                </div>
+            </div>
+
+            
+            <div class='col-md-6'>
+                <img class='center-block img-responsive' 
+                     [style.width.px]='200' 
+                     [style.margin.px]='2' 
+                     [src]='book.imageUrl'
+                     [title]='book.title'>
+            </div>
+        </div>
+    
+
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='fas fa-angle-left'></i> Back
+        </a>
+    </div>
+

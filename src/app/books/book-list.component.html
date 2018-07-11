@@ -1,0 +1,56 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+
+    <div class="panel-body">
+    <div class='row'>
+        <div class='col-md-2'>Filter by:</div>
+        <div class='col-md-4'>
+            <input type='text'
+            [(ngModel)]='listFilter' />
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-md-6'>
+            <h3>Filtered by: {{listFilter}} </h3>
+        </div>
+    </div>
+
+    <div class='table-responsive'>
+        <table class='table' *ngIf= 'books && books.length'>
+            
+    <thead>
+      <tr>
+        <th scope="col"> Image</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Year Published</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let book of filteredBooks'>
+        <td> 
+          <img [src]= 'book.imageUrl'
+            [title]='book.title'
+            [style.width.px]='imageWidth'
+            [style.margin.px]='imageMargin'>
+        </td>
+        <td><a [routerLink]="['/books', book.id]">
+            {{ book.title }}
+        </a></td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.isbn }}</td>
+        <td>{{ book.yearpublished }}</td>
+        <td>{{ book.rating }}</td>
+        <td>{{ book.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+

@@ -1,0 +1,25 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Library Logo" src="https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2016/04/1140-yeager-sell-your-used-books.imgcache.rev6feda141288df73e8fd100822bb375ea.web.652.375.jpg">
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" [routerLink]="['/welcome']">Home</a>
+        <a class="nav-item nav-link" [routerLink]="['/books']">Book List</a>
+      </div>
+  </nav>
+<!--  <div class='container'>
+      <router-outlet></router-outlet>
+  </div>
+-->
+<div class='container'>
+ <!-- <lib-books></lib-books> -->
+  <router-outlet></router-outlet>
+</div>
+
+
+
